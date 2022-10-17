@@ -6,7 +6,6 @@ import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.*;
 
-import org.junit.Assert;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -38,7 +37,7 @@ class ItemrestappApplicationTest {
 		
 		Item actual=idao.findById(1).get();
 		
-		Assert.assertEquals(i1.getItemName(),actual.getItemName());
+		Assertions.assertEquals(i1.getItemName(),actual.getItemName());
 		//Assertions.assertEquals(i1.getPrice(),actual.getPrice());
 		//Assertions.assertEquals(i1.getQuantity(),actual.getQuantity());
 	}
